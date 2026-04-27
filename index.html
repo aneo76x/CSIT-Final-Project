@@ -7,130 +7,143 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="site-shell">
     <nav class="topbar">
-      <span class="brand">Nintendo 64 Highlights</span>
+      <a class="brand" href="index.html">Nintendo 64 Highlights</a>
       <div class="topbar-links">
+        <a href="#overview">Overview</a>
+        <a href="#focus">Focus</a>
         <a href="#games">Games</a>
-        <a href="#controller">Controller</a>
-        <a href="#legacy">Legacy</a>
         <a href="prompts.html">Prompt Log</a>
       </div>
     </nav>
 
-    <div class="hero-content">
+    <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">1996 to forever</p>
-        <h1>The console that made 3D feel magical at home.</h1>
+        <p class="eyebrow">Minimal look, classic console</p>
+        <h1>Why the Nintendo 64 still matters.</h1>
         <p class="lede">
-          Nintendo 64 brought huge jumps in movement, camera design, local multiplayer,
-          and game worlds that players still talk about decades later.
+          A compact tribute to the console that made home 3D play, four-player couch sessions,
+          and unforgettable Nintendo worlds feel immediate and fun.
         </p>
-        <div class="hero-stats">
-          <div>
-            <strong>4</strong>
-            <span>controller ports built in</span>
-          </div>
-          <div>
-            <strong>3D</strong>
-            <span>landmark platforming and adventure design</span>
-          </div>
-          <div>
-            <strong>Iconic</strong>
-            <span>games that still define Nintendo history</span>
-          </div>
+        <div class="hero-actions">
+          <a class="button-primary" href="#focus">Explore highlights</a>
+          <a class="button-secondary" href="#games">See notable games</a>
         </div>
       </div>
 
       <figure class="hero-media">
         <img src="n64-hero.png" alt="Stylized Nintendo 64 inspired artwork">
       </figure>
-    </div>
+    </section>
   </header>
 
-  <main>
-    <section class="intro-band">
-      <p>
-        For a lot of players, the Nintendo 64 was the machine that turned living rooms into party rooms.
-        It was bold, colorful, a little strange, and packed with games that helped define modern play.
-      </p>
-    </section>
-
-    <section class="feature-grid" id="games">
-      <article>
-        <h2>Classic games that changed the medium</h2>
-        <p>
-          Super Mario 64 helped establish how 3D platformers should move and feel.
-          The Legend of Zelda: Ocarina of Time pushed cinematic adventure design forward.
-          GoldenEye 007 and Mario Kart 64 became all-time couch competition staples.
-        </p>
+  <main class="site-shell">
+    <section class="overview-grid" id="overview">
+      <article class="metric-card">
+        <span class="metric-label">Controller ports</span>
+        <strong class="metric-value">4</strong>
+        <p>Built in, so multiplayer was always one quick setup away.</p>
       </article>
-      <article>
-        <h2>Built for multiplayer chaos</h2>
-        <p>
-          Four controller ports on the system itself made spontaneous multiplayer easy.
-          No adapter drama, no extra setup, just grab friends and jump into Smash, Mario Party,
-          Mario Tennis, Diddy Kong Racing, or Star Fox 64.
-        </p>
+      <article class="metric-card">
+        <span class="metric-label">Design leap</span>
+        <strong class="metric-value">3D</strong>
+        <p>It helped define how movement, camera control, and space would feel on consoles.</p>
       </article>
-      <article>
-        <h2>A controller nobody forgot</h2>
-        <p>
-          The trident-shaped controller was unusual, but the analog stick changed console control in a major way.
-          It made smoother 3D movement possible and helped define how action games felt for years after.
-        </p>
-      </article>
-      <article>
-        <h2>Instant personality</h2>
-        <p>
-          Bright cartridges, bold soundtracks, chunky polygons, and confident game design gave the system its own flavor.
-          Nintendo 64 never felt generic. Even now, it has a look and energy you can spot in seconds.
-        </p>
+      <article class="metric-card">
+        <span class="metric-label">Legacy</span>
+        <strong class="metric-value">Long</strong>
+        <p>Its best games are still replayed, studied, speedrun, and referenced today.</p>
       </article>
     </section>
 
-    <section class="spotlight" id="controller">
-      <div class="spotlight-copy">
-        <p class="eyebrow">Why it stood out</p>
-        <h2>It made the jump to 3D memorable, not timid.</h2>
-        <p>
-          The Nintendo 64 did not play it safe. It embraced open arenas, free movement, dynamic camera ideas,
-          and expressive character animation at a time when that still felt fresh and experimental.
-        </p>
+    <section class="section-block interactive-block" id="focus">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive highlights</p>
+        <h2>Tap through the system's strongest qualities.</h2>
       </div>
-      <div class="quote-panel">
-        <p>
-          Run across Peach's Castle grounds, launch a blue shell at a friend, win a GoldenEye match by one shot,
-          then argue over who gets Oddjob next time. That feeling is the Nintendo 64 in a nutshell.
-        </p>
+
+      <div class="focus-layout">
+        <div class="chip-row" role="tablist" aria-label="Nintendo 64 highlight categories">
+          <button class="chip is-active" type="button" role="tab" aria-selected="true" data-focus="games">Games</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-focus="multiplayer">Multiplayer</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-focus="controller">Controller</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-focus="legacy">Legacy</button>
+        </div>
+
+        <article class="focus-panel" aria-live="polite">
+          <span class="panel-kicker" id="focus-kicker">Signature games</span>
+          <h3 id="focus-title">The library introduced genre-defining experiences.</h3>
+          <p id="focus-copy">
+            Super Mario 64, Ocarina of Time, Mario Kart 64, GoldenEye 007, and Star Fox 64
+            gave the console a lineup that still anchors conversations about gaming's best eras.
+          </p>
+          <ul class="focus-points" id="focus-points">
+            <li>Set new expectations for 3D movement and adventure pacing.</li>
+            <li>Balanced Nintendo polish with experimental ideas.</li>
+            <li>Created a lasting shorthand for what a classic console library looks like.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="timeline">
-      <div class="timeline-item">
-        <span class="year">1996</span>
-        <p>Launches with a heavy focus on pushing console 3D into the mainstream.</p>
+    <section class="section-block" id="games">
+      <div class="section-heading">
+        <p class="eyebrow">Dynamic game shelf</p>
+        <h2>Filter a few of the standouts.</h2>
       </div>
-      <div class="timeline-item">
-        <span class="year">1996</span>
-        <p>Super Mario 64 rewrites expectations for movement, level design, and camera freedom.</p>
+
+      <div class="chip-row" role="toolbar" aria-label="Game genre filters">
+        <button class="chip is-active" type="button" data-filter="all">All</button>
+        <button class="chip" type="button" data-filter="platformer">Platformer</button>
+        <button class="chip" type="button" data-filter="adventure">Adventure</button>
+        <button class="chip" type="button" data-filter="multiplayer">Multiplayer</button>
       </div>
-      <div class="timeline-item">
-        <span class="year">1998</span>
-        <p>Ocarina of Time raises the bar for adventure games and lock-on combat design.</p>
+
+      <div class="game-grid">
+        <article class="game-card" data-genre="platformer">
+          <span class="game-tag">Platformer</span>
+          <h3>Super Mario 64</h3>
+          <p>One of the clearest examples of how the console turned 3D movement into something intuitive and joyful.</p>
+        </article>
+        <article class="game-card" data-genre="adventure">
+          <span class="game-tag">Adventure</span>
+          <h3>Ocarina of Time</h3>
+          <p>A benchmark for cinematic action-adventure design, world structure, and lock-on combat.</p>
+        </article>
+        <article class="game-card" data-genre="multiplayer">
+          <span class="game-tag">Multiplayer</span>
+          <h3>Mario Kart 64</h3>
+          <p>An easy argument for why local multiplayer became part of the console's identity.</p>
+        </article>
+        <article class="game-card" data-genre="multiplayer">
+          <span class="game-tag">Multiplayer</span>
+          <h3>GoldenEye 007</h3>
+          <p>A defining split-screen experience that turned competitive living-room play into a ritual.</p>
+        </article>
+        <article class="game-card" data-genre="multiplayer">
+          <span class="game-tag">Multiplayer</span>
+          <h3>Super Smash Bros.</h3>
+          <p>The beginning of a crossover fighting series that quickly became a social staple.</p>
+        </article>
+        <article class="game-card" data-genre="adventure">
+          <span class="game-tag">Adventure</span>
+          <h3>Star Fox 64</h3>
+          <p>Fast pacing, memorable voice work, and arcade energy made it one of the system's most replayable games.</p>
+        </article>
       </div>
-      <div class="timeline-item">
-        <span class="year">Forever</span>
-        <p>The console remains one of gaming's strongest nostalgia machines and a regular benchmark in retro discussions.</p>
-      </div>
+
+      <p class="filter-summary" id="filter-summary">Showing all six featured games.</p>
     </section>
 
-    <section class="legacy-band" id="legacy">
-      <h2>Lasting legacy</h2>
-      <p>
-        The Nintendo 64's library was not just memorable, it was foundational. Designers still study its best games,
-        speedrunners still break them apart, and players still bring them up whenever the conversation turns to the greatest
-        console eras. It earned that reputation the loud, colorful way.
+    <section class="section-block legacy-strip">
+      <div class="section-heading">
+        <p class="eyebrow">Quick take</p>
+        <h2>Minimal summary, big impact.</h2>
+      </div>
+      <p class="legacy-copy">
+        The Nintendo 64 did not win people over by being subtle. It won them over with tactile controllers,
+        landmark 3D design, couch competition, and a catalog full of games that still feel culturally loud.
       </p>
     </section>
   </main>
@@ -138,5 +151,7 @@
   <footer class="site-footer">
     <p>See how the site was requested and shaped in the <a href="prompts.html">prompt log</a>.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
